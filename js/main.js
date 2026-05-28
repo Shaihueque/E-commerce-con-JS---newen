@@ -1,7 +1,7 @@
 let productos = [];
 let seccionCards = document.getElementById("seccionCards");
 
-/*Creamos una card*/
+/*Creamos una card */
 function crearCard(producto){
     
     let card = document.createElement("div");
