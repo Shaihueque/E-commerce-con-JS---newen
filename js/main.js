@@ -38,7 +38,7 @@ function crearCard(producto){
 /*Pedimos datos a nuestro json*/
 async function pedirProductos(busqueda = "") {
     try {
-        let response = await fetch(`/data/data.json`);
+        let response = await fetch(`./data/data.json`);
         let data = await response.json();
         productos = data;
 
