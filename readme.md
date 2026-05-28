@@ -1,0 +1,5 @@
+- Cree una paguina e-commerce de la venta de ropa, remeras y buzos oversize.
+- Utilice todas las herramientas que fuimos dando en clase. 
+- Considero que podria acomodar un poco el main.js para que quede mas ordenado o utilizando modulos creo que se dice si no recuerdo mal.
+- El css tampoco es una locura de ordenado pero creo que cumple, ya que lo estetico no era lo mas importante. Sin embargo lo hice responsive.
+- Trabaje con sweetAlert, un poco de boostrap, css, html y javaScript. Boostrap se me complico mas que nada tema de estilos, pero logre solucionarlo, no se si de la mejor manera pero logre una solucion, para mi ya es un avance. Se que con tiempo podre mejorar un poco la logica o tomar buenas practicas para este tipo de app. Ademas de organizar mejor el contenido de los js.

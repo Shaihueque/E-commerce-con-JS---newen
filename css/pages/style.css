@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Tipografias*/
+/*Tipografia de header*/
+.tipoGrafiaRoboto {
+    font-family: "Roboto", sans-serif;
+} 
+/*Tipografia de Main*/
+.tipoGrafiaLoto {
+    font-family: "Lato", sans-serif;
+}
+
+body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "footer"; 
+}
+
+header{
+    grid-area: header; 
+    background-color: black;
+    color: white;
+    font-family:"Roboto", sans-serif;
+}
+
+main{
+    grid-area: main;
+    font-family: "Lato", sans-serif;
+    background-color: white; 
+}
+
+.sidebar { 
+    grid-area: sidebar; 
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*HEADER*/
+.seccionHeader{
+    display: grid;
+    grid-template-columns: 0.25fr 2.5fr 0.50fr;;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "contenedorMenuhamburgesa"
+        "contenedorLogo"
+        "contenedorIconosUserCart"
+        "contenedorFormulario";
+        align-items: center;
+        align-content: center;
+}
+
+.contenedorMenuhamburgesa{
+    padding: 10px;
+}
+.contenedorLogo{
+    display: flex;
+    justify-content: center;
+padding: 5px;
+grid-column: 2 / 3;
+}
+/*contenedor de formulario buscador*/
+.contenedorFormulario{
+    display: none;
+}
+.contenedorIconosUserCart{
+padding: 5px;
+display: flex;
+}
+
+.navbarSecundario{
+    width: 25%;
+}
+/*ESTE MENU NO ES
+.menuHamburgesa{
+    width: 40px;
+}*/
+
+.logo{
+    width: 85px;
+}
+
+.iconoUsurCart{
+    width: 40px;
+}
+
+.navArtesanal{
+    display: none;
+}
+
+/*Fin de header*/
+
+/*MAIN*/
+
+main img{
+    width: 100%;
+}
+
+.nombreSeccion{
+    margin: 10px 10px 0px 10px;
+}
+
+.seccionCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "cards";
+        justify-items: center;
+}
+
+.card{
+    width: 90%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 5%;
+    margin: 10px 0;
+    border: solid 1px rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .2s;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 5% 5% 0 0 ;
+}
+
+.card h3{
+    font-size: 1.3rem;
+    margin-top: 0.5;
+}
+
+.btnStyle{
+background-color: black;
+color: white;
+margin-bottom: 0.9rem;
+transition: all 0.3s ease 0s;
+}
+
+/*ASIDE CARRITO*/
+.carrito{
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    transition: right 0.4s ease;
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.carrito.abierto{
+    right: 0;
+}
+
+.carrito-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cerrarCarrito{
+    background-color: white;
+    border: none;
+    font-size: x-large;
+}
+
+.carritoProductos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.producto-carrito{
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.btnDelete{
+    background-color: rgb(126, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-vaciar{
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    border-color: rgb(61, 1, 1) solid 1px;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    transition: all 0.3s ease 0s;
+}
+.btn-comprar{
+    width: 100%;
+    height: 3rem;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: x-large;
+    margin: 0.5rem;
+    transition: all 0.3s ease 0s;
+}
+
+/*FOOTER*/
+footer{
+    grid-area: footer;
+    background-color: black;
+    color: white; 
+    border-top: solid 1px #5f5e5e;
+}
+
+.listaFooter{
+    list-style: none;
+    text-transform: uppercase;
+    /*border-bottom: solid 1px gray;*/
+}
+
+.itemDeLista{
+    margin: 10px;
+    font-size: 15px;
+}
+.itemDeLista a{
+    text-decoration: none;
+    color: white;
+}
+
+/*tarjetas demedios de pago*/
+.contenedorTarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "tarjetas";
+    justify-items: center;
+        
+}
+
+.tarjetas{
+    width: 75%;
+}
+
+.tarjetasFooter{
+    border-radius: 10%;
+    margin: 5px;
+}
+
+/*Redes sociales*/
+.footerRedes{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.iconoRedesFooter{
+    width: 45px;
+}
+
+.enlaceiconoRedesFooter{
+    text-decoration: none;
+}
+
+.derechoDeAutor{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    /*FOOTER*/
+
+/*Cards*/
+.seccionCards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.contenedorListaFooter{
+    margin-top: 10px;
+}
+.listaFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+/*Tarjetas*/
+.contenedorTarjetas{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;;
+}
+
+.tarjetas {
+    width: 45%;
+}
+.tarjeta1{
+    grid-column: 2 / 3;
+}
+.tarjeta5{
+    grid-column: 2 / 3;
+}
+}
+
+@media (min-width: 1024px) {
+    .seccionHeader {
+        grid-template-columns: 0.50fr 2fr 0.50fr;
+        justify-items: center;
+    }
+    .contenedorLogo {
+    grid-column: 1 / 2;
+    }
+    .logo{
+        transition: all 0.5s ease
+    }
+/*Iconos de header*/
+    .iconoUsurCart{
+         transition: all 0.5s ease
+    }
+/*navbar*/
+    .navbar{
+        display: none;
+    }
+    .listaNav{
+        transition: all 0.5s ease;
+    }
+    .contenedorFormulario{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .formularioArtesanal{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .buscadorInput{
+        display: flex;
+        width: 60%;
+    }
+
+    .btnBuscadorEscritorio{
+        background-color: white;
+        border: none;
+    }
+    .btnBuscadorEscritorio img{
+        background-color: white;
+        border: none;
+    }
+    .navArtesanal{
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+    }
+
+    .listaNabVar{
+        list-style: none;
+        display: flex;
+        gap: 15%;
+        justify-content: center;
+        width: 80%;
+    }
+
+    /*Aside - carrito*/
+
+.cerrarCarrito{
+    transition: all 0.3s ease 0s;
+}
+
+    /*Cards*/
+.seccionCards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+    /*tarjetas footer*/
+    .contenedorTarjetas {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.tarjeta1{
+    grid-column: 2 / 3;
+}
+
+
+.tarjeta5{
+    grid-column: 2 / 3;
+}
+
+/*Iconos redes sociales*/
+.iconoRedesFooter{
+    transition: all 0.3s ease 0s;
+}
+
+/*PseudoClases cards*/
+
+.logo:hover{
+        transform: translateY(+7px);
+    }
+.iconoUsurCart:hover{
+    transform: scale(1.2);
+}
+
+.listaNav:hover{
+        transform: scale(1.2);
+    }
+
+.cerrarCarrito:hover{
+     transform: scale(1.2);
+}
+/*Efecto de las card*/
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(59, 59, 59);
+   }
+
+   .card:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+/*Botones de agregar al carrito, eliminar, vaciar y comprar*/
+.btn-vaciar:hover{
+     transform: scale(1.1);
+}
+.btn-comprar:hover{
+     transform: scale(1.1);
+}
+
+.btnDelete:hover{
+    transform: scale(1.1);
+    background-color: rgb(126, 0, 0);
+    color: white;
+}
+
+.btnStyle:hover{
+transform: scale(1.1);
+background-color: black;
+color: white;
+}
+
+   /*Footer tarjetas*/
+   .iconoRedesFooter:hover{
+    cursor: pointer;
+    transform: translateY(-7px);
+   }
+}
