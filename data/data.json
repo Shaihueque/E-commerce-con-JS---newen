@@ -4,62 +4,62 @@
         "nombre": "Remera Blanca",
         "sexo": "unisex",
         "precio": 9500,
-        "img": "/assets/img/products/remera_oversize_blanca.png"
+        "img": "assets/img/products/remera_oversize_blanca.png"
     },
     {
         "id": 2,
         "nombre": "Remera Negra",
         "sexo": "unisex",
         "precio": 9500,
-        "img": "/assets/img/products/remera_oversize_negra.png"
+        "img": "assets/img/products/remera_oversize_negra.png"
     },
     {
         "id": 3,
         "nombre": "Remera Azul",
         "sexo": "unisex",
         "precio": 9000,
-        "img": "/assets/img/products/remera_oversize_azulmarino.png"
+        "img": "assets/img/products/remera_oversize_azulmarino.png"
     },
     {
         "id": 4,
         "nombre": "Remera Verde",
         "sexo": "unisex",
         "precio": 9000,
-        "img": "/assets/img/products/remera_oversize_verdepino.png"
+        "img": "assets/img/products/remera_oversize_verdepino.png"
     },
     {
         "id": 5,
         "nombre": "Buzo Blanco",
         "sexo": "unisex",
         "precio": 12000,
-        "img": "/assets/img/products/buzoOversizeBlanco.png"
+        "img": "assets/img/products/buzoOversizeBlanco.png"
     },
     {
         "id": 6,
         "nombre": "Buzo Negro",
         "sexo": "unisex",
         "precio": 12000,
-        "img": "/assets/img/products/buzoOversizeNegro.png"
+        "img": "assets/img/products/buzoOversizeNegro.png"
     },
     {
         "id": 7,
         "nombre": "Buzo Azul",
         "sexo": "unisex",
         "precio": 12000,
-        "img": "/assets/img/products/buzoOversizeVerdePino.png"
+        "img": "assets/img/products/buzoOversizeVerdePino.png"
     },
     {
         "id": 8,
         "nombre": "Buzo Verde",
         "sexo": "unisex",
         "precio": 12000,
-        "img": "/assets/img/products/buzoOversizeAzulMarino.png"
+        "img": "assets/img/products/buzoOversizeAzulMarino.png"
     },
     {
         "id": 9,
         "nombre": "Buzo Rosa",
         "sexo": "unisex",
         "precio": 12000,
-        "img": "/assets/img/products/buzoOversizeRosa.png"
+        "img": "assets/img/products/buzoOversizeRosa.png"
     }
 ]
